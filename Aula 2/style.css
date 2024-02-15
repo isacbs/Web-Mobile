@@ -1,0 +1,54 @@
+/*body {
+    background-color: blue;
+} */
+
+nav ul li a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+nav ul {
+    padding: 0;
+    display: flex;
+    gap: 10px; /*Dá espaço entre os itens igual o margin*/
+    flex-direction: row;
+    /* flex-direction: row-reverse*/
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+.list li{
+    list-style-type: square;
+}
+
+.list li::marker {
+    font-size: 1em;
+    color: red;
+}
+
+input[type="checkbox"] + label{
+    background-color: #c0c0c0;
+    width: 48px;
+    height: 24px;
+    display: block;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"]:checked + label{
+    flex-direction: row-reverse;
+}
+
+
+input[type="checkbox"] + label div {
+    background-color: blue;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
+
