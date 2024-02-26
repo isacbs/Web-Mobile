@@ -17,19 +17,32 @@ console.log(resultado)
 
 // Transformar binário em um valor inteiro positivo 
 
-function binaryToInteger(binaryString) {
-    let result = 0;
-    let exponent = binaryString.length - 1;
-    for (let i = 0; i < binaryString.length; i++) {
-      result += parseInt(binaryString[i]) * (2 ** exponent);
-      exponent--;
+function binario(bin) {
+    let res = 0;
+    let num = bin.split("");
+    for (i = 0; i < bin.length; i++) {
+    let ind = num.lenght - i
+    res += num[i] * 2 ** ind;
     }
-    return result;
-  }  
+    num--
+    return res
+}
+
+let i = 1001
+console.log(i)
 
 // Crie um algoritmo que receba uma frase e a mostre na língua do P
 
-
+function LinguaDoP(frase) {
+    const termo = frase.split(" ");
+    const fraseDoP = termo.map(palavra => "P" + palavra).join(" ");
+    return fraseDoP;
+}
+  
+const frase = "Eu gosto do Mackenzie";
+const fraseNova = LinguaDoP(frase);
+console.log(fraseNova);
+  
 
 // Substitua uma frase
 
