@@ -17,23 +17,26 @@ console.log(resultado)
 
 // Transformar binário em um valor inteiro positivo 
 
+function binaryToInteger(binaryString) {
+    let result = 0;
+    let exponent = binaryString.length - 1;
+    for (let i = 0; i < binaryString.length; i++) {
+      result += parseInt(binaryString[i]) * (2 ** exponent);
+      exponent--;
+    }
+    return result;
+  }  
 
-
-// Crie uma frase e a transforme na linguagem do P
+// Crie um algoritmo que receba uma frase e a mostre na língua do P
 
 
 
 // Substitua uma frase
 
-function substituir(frase1,frase2,frase3) {
-    return frase1.split(frase2).join(frase3)
+function substituir(str1, str2, str3) {
+    return str1.replace(str2,str3)
 }
 
-let frase1 = "Eu gosto de CSS"
-let frase2 = "CSS"
-let frase3 = "HTML"
-
-let result = substituir(frase1,frase2,frase3)
-console.log(result)
+console.log(substituir("Eu gosto de CSS","CSS", "HTML"));
 
 // Desafio
