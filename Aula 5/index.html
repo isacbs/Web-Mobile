@@ -1,0 +1,43 @@
+<DOCTYPE! html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array e Objetos</title>
+    <script>
+
+        let cores = ['vermelho', 'verde', 'azul', 'amarelo']
+
+        cores.push('preto')
+        cores.unshift('rosa')
+
+        let ultima = cores.pop()
+        let primeira = cores.shift()
+
+        console.log(primeira,ultima)
+        console.log(cores[cores.lenght -1])
+        console.log(cores)
+
+        let cores2 = ["magenta", "ciano", "laranja"]
+
+        let todas = [...cores, ...cores2] //Junta duas arrays
+        console.log(todas)
+
+        let numeros = [2, 6, 9]
+        function soma(a,b,c) {
+            console.log(a + b + c)
+        }
+        
+        soma(...numeros)
+
+    </script>
+
+</head>
+<body>
+
+    <div id="conteudo"></div>
+    <script src="script.js" type="text/javascript"></script>
+    
+</body>
+</html>
