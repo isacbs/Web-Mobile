@@ -1,0 +1,12 @@
+:root {
+    --menu-bgcolor: #000;
+    --menu-color: #fff; 
+
+    --min-size-desktop: 768px;
+}
+
+@media only screen and ( min-width: 768px ) {
+    body {
+        padding: 60px;
+    }
+}

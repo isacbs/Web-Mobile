@@ -1,0 +1,18 @@
+.menuItem {
+    text-decoration: none;
+    color: var(--menu-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menuItem span {
+    margin-top: 10px;
+}
+
+@media only screen and ( min-width: 768px ) {
+    .menuItem img {
+        display: none;
+    }
+}
